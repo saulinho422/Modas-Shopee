@@ -1,0 +1,227 @@
+@media (max-width: 600px) {
+    .product-list {
+        flex-direction: column; /* Alinha os produtos em coluna em telas menores */
+    }
+}
+:root {
+    --color-1: #4b0895;
+    --color-2: #6521ae;
+    --color-3: #7f3ac8;
+    --color-4: #9853e1;
+    --color-5: #b26cfa;
+}
+
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: var(--color-1);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-1);
+    background-image: 
+        linear-gradient(30deg, var(--color-2) 12%, transparent 12.5%, transparent 87%, var(--color-2) 87.5%, var(--color-2)),
+        linear-gradient(150deg, var(--color-2) 12%, transparent 12.5%, transparent 87%, var(--color-2) 87.5%, var(--color-2)),
+        linear-gradient(30deg, var(--color-2) 12%, transparent 12.5%, transparent 87%, var(--color-2) 87.5%, var(--color-2)),
+        linear-gradient(150deg, var(--color-2) 12%, transparent 12.5%, transparent 87%, var(--color-2) 87.5%, var(--color-2)),
+        linear-gradient(60deg, var(--color-3) 25%, transparent 25.5%, transparent 75%, var(--color-3) 75%, var(--color-3)),
+        linear-gradient(60deg, var(--color-3) 25%, transparent 25.5%, transparent 75%, var(--color-3) 75%, var(--color-3));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.App {
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(to right, #6c5ce7, #a29bfe); /* Gradiente de fundo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.header .logo {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+.header-content {
+    flex-grow: 1;
+}
+
+.header h1 {
+    font-family: 'Ruge Boogie', cursive;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover { transform: scale(1.1);
+    background-color: var(--color-2);
+}
+
+#facebook {
+    background-image: url('imagens/tiktok.png');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#instagram {
+    background-image: url('imagens/insta.png');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: #4B0082; /* Título em vermelho */
+}
+
+input[type="text"] {
+    width: 80%; /* Largura da barra de pesquisa */
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #4B0082; /* Borda roxa */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #6c5ce7; /* Tom mais escuro de roxo ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%; /* Imagem ocupa 100% do contêiner */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 2px solid #4B0082; /* Borda vermelha */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0; /* Fundo dos produtos em um tom escuro */
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.product img {
+    display: block; /* Faz a imagem ser um bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+    max-width: 100%; /* A imagem não excederá a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4B0082; /* Botão amarelo */
+    color: #ffffff; /* Texto do botão em preto */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #6c5ce7; /* Tom mais escuro de amarelo ao passar o mouse */
+}
+/* Animação do slideshow */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+

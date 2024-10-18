@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modas Shopee</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon_io/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="App">
+        <header class="header">
+            <img src="imagens/Shop_Logo.png" alt="Logo" class="logo">
+            <div class="header-content">
+                <h1>Modas Shopee</h1>
+                <p>Encontre as melhores ofertas de moda!</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon" id="facebook"></a>
+                <a href="#" class="social-icon" id="instagram"></a>
+            </div>
+        </header> 
+        <input type="text" id="search" placeholder="Buscar produtos..." onkeyup="searchProducts()">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <a href="link-do-produto-1">
+                    <img src="imagens/1.png" alt="Produto 1">
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="link-do-produto-2">
+                    <img src="imagens/2.png" alt="Produto 2">
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="link-do-produto-3">
+                    <img src="imagens/3.png" alt="Produto 3">
+                </a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="product-list" id="product-list">
+            <!-- Os produtos serão inseridos aqui pelo JavaScript -->
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
